@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#fileInput {
+    margin: 20px 0;
+}
+
+.image-preview {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin: 10px -5px;
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 5px; 
+    position: relative; 
+}
+
+.image-item img {
+    width: 100px; 
+    margin-bottom: 5px; 
+    border: 1px solid #ddd; 
+    padding: 5px; 
+    background: #fff; 
+}
+
+.image-item input {
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+}
+
+
+.pdf-name {
+    margin: 20px 0;
+    
+}
+input[type="text"] {
+    width: 10rem;
+    height: 30px; 
+    font-size: 15px; 
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 8px; 
+    margin: 0 5px; 
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; 
+    outline: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

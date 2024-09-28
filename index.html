@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image to PDF Converter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+    <h1>Convert Selected Images to PDF</h1>
+    <input type="file" id="fileInput" accept="image/*" multiple />
+
+    <!-- Choose All Checkbox -->
+    <div id="selectAllContainer" style="display: none">
+        <input type="checkbox" id="selectAll" />
+        <label for="selectAll">Choose All</label>
+    </div>
+
+    <!-- Image Preview Section -->
+    <div id="imagePreview" class="image-preview"></div>
+
+    <!-- PDF Name Input -->
+    <div class="pdf-name">
+        <label for="pdfName">PDF File Name:</label>
+        <input type="text" id="pdfName" placeholder="Enter file name" />
+    </div>
+
+    <!-- Convert Button -->
+    <button id="convertButton">Convert Selected to PDF</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
