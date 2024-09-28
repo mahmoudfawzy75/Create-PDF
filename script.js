@@ -5,6 +5,7 @@ document.getElementById('fileInput').addEventListener('change', function(event) 
     const files = event.target.files;
     const imagePreview = document.getElementById('imagePreview');
     const selectAllContainer = document.getElementById('selectAllContainer');
+    
     imagePreview.innerHTML = '';
 
     // Display "Choose All" checkbox only if more than 2 images are selected
